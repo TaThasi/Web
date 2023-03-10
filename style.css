@@ -1,0 +1,15 @@
+.About-us{
+    background-color: rgba(0, 136, 169, 1);
+    font-family: fantasy;
+    font-size: 150%;
+    border-radius: 12px;
+    /* display: flex; */
+    text-align: center;
+}
+.Guide{
+    background-color: rgba(0, 136, 169, 1);
+    font-family: fantasy;
+    font-size: 150%;
+    border-radius: 12px;
+    text-align: center;
+}
