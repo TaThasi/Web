@@ -45,7 +45,14 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-}
+    flex-direction: row;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffff;
+} 
 .logo
 {
     cursor: pointer;
