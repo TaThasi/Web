@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-}
+} */
 li,a,.sign-in-button
 {
     font-family: "Montserrat",sans-serif;

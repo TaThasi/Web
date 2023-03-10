@@ -13,3 +13,22 @@
     border-radius: 12px;
     text-align: center;
 }
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #282b30;
+    font-family: fantasy;
+    font-size: 150%;
+    color: whitesmoke;
+}
+.footer-side01{
+    
+    flex: 30%;
+
+}
+.footer-side02{
+    flex: 40%;
+}
+.footer-side03{
+    flex: 30%;
+}
