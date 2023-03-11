@@ -13,29 +13,87 @@ li,a,.sign-in-button
     color: #222;
     text-decoration: none;
 }
-.nav-bar-btn
+.hamburger
 {
-    width: 42px;
-    height: 35px;
-    color: #222;
     display: none;
-    margin-left: 20px;
+}
+.nav-link li
+{
+    display: inline-block;
+    padding: 0px 20px;
+
 }
 @media (max-width : 900px) {
-    .nav-bar-btn
+    .hamburger
     {
         display: block;
+        cursor: pointer;
+
+    }
+    .line
+    {
+        width: 30px;
+        height: 3px;
+        background: #222;
+        margin: 6px 0;
+        margin-left: 15px;
     }
     .nav_bar
     {
         display: none;
     }
-    
+    .nav-bar.active
+    {
+        height: 450px;
+    }
+
+    .nav-bar
+    {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+
+    }
+    .nav-link li
+    {
+        display: block;
+        width: fit-content;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    } 
+    .nav-link
+    {
+        display: block;
+    }
+    .nav-link li a
+    {
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 25px;
+        border-radius: 50px;
+        transition: 0.2s;
+        margin: 0 8px;
+
+    }
+    .nav-link li a:hover
+    {
+        color: #11101b;
+        background-color: #fefefe;
+    }
 }
-.nav-link
-{
-    margin-top: 11.7px;
-}
+
 li
 {
     cursor: pointer;
@@ -44,33 +102,26 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
     flex-direction: row;
     position: fixed;
     z-index: 100;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #ffff;
+    background-color: #ffffff;
 } 
 .logo
 {
     cursor: pointer;
-    height: 34px;
-    width: 80px;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
-
 .nav-link
 {
+    margin-top: 11.7px;
     list-style: none;
-}
-
-.nav-link li
-{
-    display: inline-block;
-    padding: 0px 20px;
-
-
 }
 .nav-link li a
 {
@@ -96,6 +147,8 @@ li:hover
     border-radius: 50px;
     cursor:pointer;
     transition: all 0.3s ease 0s;
+    font-weight: bold;
+    font-size: 18px;
 
 }
 
@@ -103,24 +156,9 @@ li:hover
 {
     background-color: rgba(0, 136, 169, 0.8);
 }
-.nav_bar-overlay
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
 .nav-bar-tap
 {
     display: flex;
     align-items: center;
-}
-.menu-icon
-{
-    height: 42px;
-    width: 35px;
-    padding-bottom: 7px;
+    cursor: pointer;
 }

@@ -16,9 +16,8 @@
     <body>
         
             <header>
-                <img class="logo" src="image/logo.png" >
-                <div class="nav_bar">
-                    <nav id="nav">
+                <div class="logo">BESTFEE</div>
+                    <nav class="nav-bar">
                         <ul class="nav-link">
                             <li><a href="#nav-link-script01">About us</a></li>
                             <li><a href="#nav-link-script02">Guide</a></li>
@@ -26,58 +25,80 @@
                             <li><a href="#nav-link-script04">Expert reviews</a></li>
                         </ul>
                     </nav>
-                </div>
                 <div class="nav-bar-tap">
-                    <div class="nav-bar-menu">
-                        <a class="cta" href="#">
-                            <button class="sign-in-button">
-                                Sign in
-                            </button>
-                        </a>
-                    </div>
-                    <div class="nav-bar-btn">
-                        <img src="image/item.png" class="menu-icon">
-                    </div>
-                    <div class="nav-bar-overlay"></div>
+                        <div class="nav-bar-menu">
+                            <a class="cta" href="#">
+                                <button class="sign-in-button">
+                                    Sign in
+                                </button>
+                            </a>
+                        </div>
+                        <div class="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
                 </div>
-        </header>
-        <div class="search-tag">
-              
-        </div>
-        <hr>
-    <div id="nav-link-script02" class="Guide"> 
-<ul>
-    <li>Search product to reference Fee</li>
-    <li>Click to move the next page</li>
-    <li>Refer to Fee and link tag</li>
-</ul>
-    </div>
-    <hr>
-    <div id="nav-link-script03" class="Explore">
+            </header>
+            <script>
+                hamberger = document.querySelector(".hamburger");
+                hamberger.onclick = function()
+                {
+                    navBar = document.querySelector(".nav-bar");
+                    navBar.classList.toggle("active");
+                }
+            </script>
+                <div class="search-tag">
+                    
+                </div>
+                <hr>
+            <div id="nav-link-script02" class="Guide"> 
+                <ul>
+                    <li>Search product to reference Fee</li>
+                    <li>Click to move the next page</li>
+                    <li>Refer to Fee and link tag</li>
+                </ul>
+            </div>
+            <hr>
+                <div id="nav-link-script03" class="Explore">
 
-    </div><hr>
-    <div id="nav-link-script04" class="Expert-reviews">
+                </div>
+            <hr>
+                <div id="nav-link-script04" class="Expert-reviews">
 
-    </div><hr>
-    <div id="nav-link-script01" class="About-us">
-    <ul>
-        <li>Created by TLee and Thai</li>
-        <li>University of Information Technology</li>
-        <li><a href="mailto:mrtaivietbac@gmail.com">Mail me.</a></li>
-    </ul>
-    </div>
-    <div class="footer">
-        <div class="footer-side01">
-            <h1>Contact</h1>
+                </div
+            ><hr>
+            <div id="nav-link-script01" class="About-us">
+                <ul>
+                    <li>Created by TLee and Thai</li>
+                    <li>University of Information Technology</li>
+                    <li><a href="mailto:mrtaivietbac@gmail.com">Mail me.</a></li>
+                </ul>
+            </div>
+        
 
-        </div>
-        <div class="footer-side02">
-            <h1>Subscribe</h1>
-        </div>
-        <div class="footer-side03">
-            <h1>What is BESTFEE</h1>
-        </div>
-    </div>
+
+
+
+
+
+
+
+                    <!-- <div class="footer">
+                        <div class="footer-side01">
+                            <h1>Contact</h1>
+                        </div>
+                        <div class="footer-side02">
+                            <h1>Subscribe</h1>
+                        </div>
+                        <div class="footer-side03">
+                            <h1>What is BESTFEE</h1>
+                        </div>
+                    </div> -->
+
+
+
+
     </body>
 
 </html>
